@@ -1,0 +1,37 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="contacts" routerLinkActive="active">Contacts</a></li>
+      <li><a routerLink="messages" routerLinkActive="active">Messages</a></li>
+      <li>
+
+      </li>
+
+
+    </ul>
+
+
+
+  </div>
+
+  		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+		<form action="/hms/accommodations" method="GET"> 
+  			<div class="row">
+    		<div class="col-xs-6 col-md-4">
+      		<div class="input-group">
+   				<input [(ngModel)]="searchTerm" name="searchTerm" type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+   				<div class="input-group-btn">
+        			<button class="btn btn-primary" type="submit" (click)="handleSearch()">Search
+        				<!-- <span class="glyphicon glyphicon-search"></span> -->
+        			</button>
+   				</div>
+   			</div>
+    		</div>
+  			</div>
+		</form>
+
+</nav>

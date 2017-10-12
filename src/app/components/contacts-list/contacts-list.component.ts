@@ -8,7 +8,8 @@ import {ContactsService} from '../../services/contacts.service';
 })
 export class ContactsListComponent implements OnInit {
 
-  contacts:Array<Object>
+  contacts:Array<Object>;
+  searchTerm:string;
 
   constructor(private contactsService:ContactsService) { 
 
@@ -16,6 +17,11 @@ export class ContactsListComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  	this.contactsService.getSearchTerm().subscribe(searchTerm => {
+  		//console.log(searchTerm);
+  		this.searchTerm = searchTerm;
+  	})
   }
 
 }

@@ -10,11 +10,15 @@ import {ContactsService} from './services/contacts.service';
 //import { MessagesComponent } from './components/messages/messages.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ContactDetailsComponent } from './components/contacts/contact-details/contact-details.component';
+//import { SearchPipe } from './pipes/search.pipe';
+//import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    //SearchPipe,
+    //NavbarComponent,
     //ContactDetailsComponent,
     //ExponentialPipe,
     //ContactsListComponent,

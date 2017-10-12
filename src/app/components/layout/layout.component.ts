@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ContactsService} from '../../services/contacts.service'
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contactsService:ContactsService) { 
+  	this.contactsService = contactsService;
+  }
 
   ngOnInit() {
+  }
+
+  handleSearch(search){
+  	this.contactsService.search(search);
+
   }
 
 }
