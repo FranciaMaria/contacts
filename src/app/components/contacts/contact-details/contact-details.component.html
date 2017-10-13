@@ -20,13 +20,14 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let cc of cont">
+    <tr>
       <th scope="row">{{ contact.id }}</th>
       <td >{{ contact.firstName }} </td>
       <td >{{ contact.lastName }} </td>
       <td >{{ contact.number }} </td>
       <td><button class="btn btn-danger">Delete contact</button></td>
     </tr>
+    <router-outlet></router-outlet>
   </tbody>
 </table>
 </body>

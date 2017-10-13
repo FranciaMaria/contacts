@@ -1,4 +1,4 @@
-/*
+
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {ContactsService} from '../../../services/contacts.service';
@@ -21,7 +21,7 @@ export class ContactDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.contact = this.route.params.subscribe(params => {
+    this.route.params.subscribe(params => {
        this.id = +params['id']; // (+) converts string 'id' to a number
        this.contacts.forEach(cont =>{
        		if(cont['id'] == this.id ){
@@ -40,9 +40,9 @@ export class ContactDetailsComponent implements OnInit {
 	
 
 }
-*/
 
-import { Component, OnInit } from '@angular/core';
+
+/*import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ContactsService } from '../../../services/contacts.service';
 
@@ -71,3 +71,4 @@ export class ContactDetailsComponent implements OnInit {
 
 }
 
+*/

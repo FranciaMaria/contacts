@@ -25,13 +25,14 @@
   <tbody>
     <tr *ngFor="let contact of contacts | search:searchTerm ">
       <th scope="row">{{ contact.id }}</th>
-      <td ><a routerLink="contacts/{{contact.id}}" routerLinkActive="active" >{{ contact.firstName }} </a></td>
+      <td ><a routerLink="/contacts/{{contact.id}}" >{{ contact.firstName }} </a></td>
       <td >{{ contact.lastName }} </td>
       <td >{{ contact.number }} </td>
       <td><button class="btn btn-danger">Delete contact</button></td>
     </tr>
   </tbody>
 </table>
+<router-outlet></router-outlet>
 </body>
 </html>
 

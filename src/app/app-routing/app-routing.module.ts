@@ -27,15 +27,15 @@ const appRoutes:Routes = [
     FormsModule
   ],
   declarations: [
-  ContactsListComponent,
-  MessagesComponent,
-  LayoutComponent,
-  ContactDetailsComponent,
-  NavbarComponent,
-  SearchPipe
+    ContactsListComponent,
+    MessagesComponent,
+    LayoutComponent,
+    ContactDetailsComponent,
+    NavbarComponent,
+    SearchPipe
   ], 
   exports: [
-  LayoutComponent
+    LayoutComponent
   ],
 })
 export class AppRoutingModule { }
